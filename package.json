@@ -1,0 +1,39 @@
+{
+    "name": "vue-smart-sticky-sidebar",
+    "version": "1.0.0",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/vue-smart-sticky-sidebar.umd.js",
+    "module": "dist/vue-smart-sticky-sidebar.js",
+    "types": "./dist/main.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/vue-smart-sticky-sidebar.js",
+            "require": "./dist/vue-smart-sticky-sidebar.umd.js"
+        },
+        "./dist/style.css": "./dist/style.css"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build && vue-tsc --emitDeclarationOnly",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@vueuse/core": "^10.7.2",
+        "vue": "^3.4.14"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.5",
+        "@vitejs/plugin-vue": "^5.0.3",
+        "autoprefixer": "^10.4.17",
+        "daisyui": "^4.6.0",
+        "postcss": "^8.4.33",
+        "sass": "^1.70.0",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.11",
+        "vue-tsc": "^1.8.27"
+    }
+}

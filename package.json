@@ -12,8 +12,7 @@
         ".": {
             "import": "./dist/vue-smart-sticky-sidebar.js",
             "require": "./dist/vue-smart-sticky-sidebar.umd.js"
-        },
-        "./dist/style.css": "./dist/style.css"
+        }
     },
     "scripts": {
         "dev": "vite",

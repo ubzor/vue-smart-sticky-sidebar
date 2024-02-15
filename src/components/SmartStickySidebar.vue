@@ -97,6 +97,14 @@ const updatecontentStatus = () => {
         return
     }
 
+    if (
+        currentStickyState.value === StickyStates.StickTocontainerBottom &&
+        contentBottom.value - contentHeight.value - topSpacing.value > 0
+    ) {
+        currentStickyState.value = StickyStates.StickToScreenTop
+        return
+    }
+
     if (contentFitscontainerSize.value) {
         if (contentHeight.value + topSpacing.value <= containerBottom.value) {
             currentStickyState.value = StickyStates.StickToScreenTop
@@ -168,7 +176,10 @@ onMounted(() => {
     })
 
     if (contentRef.value) {
-        mutationObserver.value.observe(contentRef.value, { childList: true, subtree: true })
+        mutationObserver.value.observe(contentRef.value, {
+            childList: true,
+            subtree: true
+        })
     }
 })
 

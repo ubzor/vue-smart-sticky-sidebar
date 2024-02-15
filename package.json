@@ -1,9 +1,10 @@
 {
     "name": "vue-smart-sticky-sidebar",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "type": "module",
     "files": [
-        "dist"
+        "dist",
+        "src"
     ],
     "main": "dist/vue-smart-sticky-sidebar.umd.js",
     "module": "dist/vue-smart-sticky-sidebar.js",

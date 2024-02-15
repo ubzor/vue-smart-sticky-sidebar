@@ -1,6 +1,6 @@
 {
     "name": "vue-smart-sticky-sidebar",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "type": "module",
     "files": [
         "dist",
@@ -13,6 +13,9 @@
         ".": {
             "import": "./dist/vue-smart-sticky-sidebar.js",
             "require": "./dist/vue-smart-sticky-sidebar.umd.js"
+        },
+        "./src/components/SmartStickySidebar.vue": {
+            "import": "./src/components/SmartStickySidebar.vue"
         }
     },
     "scripts": {
